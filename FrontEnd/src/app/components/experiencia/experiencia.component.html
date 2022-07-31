@@ -2,16 +2,16 @@
 
   <div class="container" id="HeaderExp">
     <h4><span style="color:#3B5CE5;">Experiencia Laboral </span> </h4>
-    <button type="button" class="btn btn-dark" routerLink="/newExperiencia" *ngIf="isLogged">
-      Nueva Experiencia
+    <button type="button" class="btn" routerLink="/newExperiencia" *ngIf="isLogged">
+      <i class="bi bi-plus-lg"></i>
     </button>
   </div>
-  <div class="card mb-3" id="cardExperiencia" *ngFor="let Exp of experiencia">
+  <div class="mb-3" id="cardExperiencia" *ngFor="let Exp of experiencia">
     <div class="row g-0">
       <div class="col-md-4" style="padding: 75px;" >
         <img src="../../../assets/icono de trabajo.png" class="img-fluid rounded-start" alt="Imagen  ">
       </div>
-      <div class="col-md-8"  >
+      <div class="col-md-8">
         <div class="card-text" style="height: 50px;" *ngIf="isLogged">
           <ul id="navExp">
             <li *ngIf="isLogged">
