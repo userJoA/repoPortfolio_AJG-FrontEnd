@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="card">
+      <form (ngSubmit)="onEdit()" novalidate #f="ngForm" >
+          <div class="form-group">
+            <label for="imgHab">IMgHab </label>
+            <input type="text" class="form-control" id="imgHab" name="imgHab" [(ngModel)]="habilidad.imgHab" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="imgHab">Nombre </label>
+            <input type="text" class="form-control" id="nameHab" name="nameHab" [(ngModel)]="habilidad.nameHab" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="progressHab">Porcentaje</label>
+            <input type="number" class="form-control" id="progressHab" name="progressHab" [(ngModel)]="habilidad.progressHab" required>
+          </div>
+          <button class="btn btn-primary">actualizar</button>
+      </form>
+    </div>
+  </div>

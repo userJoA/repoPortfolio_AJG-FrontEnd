@@ -1,0 +1,37 @@
+.row{
+    padding: 75px;
+    text-align: center;
+  }
+
+  div{
+    text-align: center;
+  }
+  img{
+    width: 250px;
+    height: 250px;
+  }
+#info{
+  background-color:#DEDFEA;
+
+
+}
+  @media (min-width: 576px){
+    #fotoDePerfil{
+      position:absolute;
+      width: 17%;
+      border-radius: 100%;
+      left: 2%;
+      top: 900px;
+    }
+  }
+
+  @media (max-width: 575px){
+    #perfil{
+        position:absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px white;
+        left: 35%;
+        top: 400px;
+    }
+  }

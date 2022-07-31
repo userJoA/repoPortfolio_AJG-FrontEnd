@@ -1,0 +1,45 @@
+
+
+
+#cardEducacion{
+  margin: auto;
+  margin-left: 150px;
+  width: 1000px;
+  width: 750px;
+  align-items: center;
+  border-bottom: solid 1px #505368;
+
+}
+
+.btn{
+  margin: 10px;
+}
+
+
+#navEdu{
+
+  display: flex;
+  list-style: none;
+  justify-content:flex-end;
+  align-items: center;
+  text-align: center;
+
+}
+
+#HeaderEdu{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: solid 2px #3B5CE5;
+  height: 7vh;
+
+}
+
+
+div{
+  background-color: #DEDFEA;
+}
+
+#CARD-container{
+
+}

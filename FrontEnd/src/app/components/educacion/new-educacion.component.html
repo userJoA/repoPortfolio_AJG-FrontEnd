@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm" >
+        <div class="form-group">
+          <label for="imgEdu">IMg </label>
+          <input type="text" class="form-control" id="imgEdu" name="imgEdu" [(ngModel)]="imgEdu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="titleEdu">Titulo </label>
+          <input type="text" class="form-control" id="titleEdu" name="titleEdu" [(ngModel)]="titleEdu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="durationEdu">Duracion en años </label>
+          <input type="text" class="form-control" id="durationEdu" name="durationEdu" [(ngModel)]="durationEdu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="descriptionEdu">Descripcion </label>
+          <input type="text" class="form-control" id="descriptionEdu" name="descriptionEdu" [(ngModel)]="descriptionEdu" required>
+        </div>
+        <button class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
+</div>

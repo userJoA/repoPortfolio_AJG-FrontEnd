@@ -1,0 +1,21 @@
+<div class="container" style="margin-top: 40px;">
+    <div class="container" id="headerHab">
+        <h4><span style="color:#3B5CE5;">Skills </span> </h4>
+        <button type="button" class="btn" routerLink="/newHabilidad" *ngIf="isLogged">
+            <i class="bi bi-plus-lg"></i>
+        </button>
+    </div>
+    <div class="row"  id="Habilidad" >
+        <div class="text-center col-sm-4 col-md-4 col-lg-4" id="cardHabilidad" *ngFor="let hab of habilidad">
+            <div *ngIf="isLogged" style="display: flex; justify-content: space-around;">
+                <button class="btn" routerLink="/editHabilidad/{{hab.id}}"><i class="bi bi-pen"></i></button>
+                <button class="btn" (click)="delete(hab.id)"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <h3>{{hab.nameHab}}</h3>
+            <circle-progress [percent]="hab.progressHab" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+            </circle-progress>
+        </div>
+
+    </div>
+</div>

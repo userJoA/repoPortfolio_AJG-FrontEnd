@@ -1,0 +1,43 @@
+
+
+
+#cardExperiencia{
+  margin: auto;
+  margin-left: 150px;
+  width: 1000px;
+  width: 750px;
+  align-items: center;
+
+}
+
+.btn{
+  margin: 10px;
+}
+
+
+#navExp{
+
+  display: flex;
+  list-style: none;
+  justify-content:flex-end;
+  align-items: center;
+  text-align: center;
+
+}
+
+#HeaderExp{
+  display: flex;
+  justify-content: space-between;
+
+  height: 7vh;
+  align-items: center;
+  border-bottom: solid 2px #3B5CE5 ;
+
+}
+
+
+div{
+  background-color: #DEDFEA;
+}
+
+

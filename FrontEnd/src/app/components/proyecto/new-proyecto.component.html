@@ -1,0 +1,21 @@
+<div class="container m-5">
+  <div class="card">
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm" >
+        <div class="form-group">
+          <label for="imgPro">IMgHab </label>
+          <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="imgPro" required>
+        </div>
+
+        <div class="form-group">
+          <label for="namePro">Nombre </label>
+          <input type="text" class="form-control" id="namePro" name="namePro" [(ngModel)]="namePro" required>
+        </div>
+
+        <div class="form-group">
+          <label for="descriptionPro">Descripcion</label>
+          <input type="text" class="form-control" id="descriptionPro" name="descriptionPro" [(ngModel)]="descriptionPro" required>
+        </div>
+        <button class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
+</div>

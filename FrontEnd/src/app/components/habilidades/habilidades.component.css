@@ -1,0 +1,26 @@
+.row{
+    padding: 25px;
+}
+
+#headerHab{
+    display: flex;
+    justify-content: space-between;
+
+    height: 7vh;
+    align-items: center;
+    border-bottom: solid 2px #3B5CE5 ;
+}
+
+#Habilidad{
+    display: flex;
+}
+
+#cardHabilidad{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+    border: solid 1px black;
+
+}

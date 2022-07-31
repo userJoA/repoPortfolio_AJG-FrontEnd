@@ -1,0 +1,16 @@
+img{
+    height: 50px;
+    width: auto;
+    margin: 10px;
+    background-color: #3B5CE5  ;
+    border-radius: solid ;
+
+
+}
+
+div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}

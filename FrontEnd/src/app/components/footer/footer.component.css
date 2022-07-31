@@ -1,0 +1,9 @@
+.container-fluid{
+  height: 70px;
+  background-color: black;
+  margin-top: 50px;
+  width:100% ;
+  text-align: center;
+  padding-top:20px ;
+  position: relative;
+}

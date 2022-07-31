@@ -1,0 +1,12 @@
+
+  <ul>
+    <li ><div class="btn" style="background:#DEDFEA "> <i class="bi bi-github" style="color: #3B5CE5;"></i></div></li>
+    <li ><div class="btn" style="background:#DEDFEA "> <i class="bi bi-linkedin" style="color: #3B5CE5;" ></i></div></li>
+    <li ><div class="btn" style="background:#DEDFEA "> <i class="bi bi-github" style="color: #3B5CE5;" ></i></div></li>
+    <li ><div class="btn" style="background:#DEDFEA "> <i class="bi bi-linkedin" style="color: #3B5CE5;" ></i></div></li>
+  <li >
+      <button type="button" class="btn btn-success " (click)="login()" *ngIf="!isLogged">Login</button>
+      <button type="button" class="btn btn-info" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
+    </li>
+  </ul>
+
