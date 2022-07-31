@@ -7,7 +7,7 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-  proURL = 'http://localhost:8080/Proyecto/'
+  proURL = 'https://appajgportfolioback.herokuapp.com/Proyecto/'
   constructor(private httpClient:HttpClient) { }
 
   public list(): Observable<Proyecto[]> {
