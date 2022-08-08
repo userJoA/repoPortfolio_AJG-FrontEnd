@@ -1,27 +1,30 @@
-<div class="container">
-    <div class="card">
-      <form (ngSubmit)="onEdit()" novalidate #f="ngForm" >
-          <div class="form-group">
-            <label for="imgEdu">IMg </label>
-            <input type="text" class="form-control" id="imgEdu" name="imgEdu" [(ngModel)]="educacion.imgEdu" required>
-          </div>
-  
-          <div class="form-group">
-            <label for="titleEdu">Titulo </label>
-            <input type="text" class="form-control" id="titleEdu" name="titleEdu" [(ngModel)]="educacion.titleEdu" required>
-          </div>
-  
-          <div class="form-group">
-            <label for="durationEdu">Duracion en años </label>
-            <input type="text" class="form-control" id="durationEdu" name="durationEdu" [(ngModel)]="educacion.durationEdu" required>
-          </div>
-  
-          <div class="form-group">
-            <label for="descriptionEdu">Descripcion </label>
-            <input type="text" class="form-control" id="descriptionEdu" name="descriptionEdu" [(ngModel)]="educacion.descriptionEdu" required>
-          </div>
-          <button class="btn btn-primary">Editar</button>
-      </form>
+<div class="container-fluid">
+  <div class="row " style="margin-bottom: 25px;">
+
+    <form class="row g-3" (ngSubmit)="onEdit()" novalidate #f="ngForm">
+      <div class="col-md-12" style="display: flex; justify-content:space-between;">
+        <h5><span>Editar</span> </h5>
+        <button type="button" class="btn-close btn-close-dark" aria-label="Close"></button>
+      </div>
+    <div class="col-md-12">
+      <label for="imgEdu" class="form-label">URL_imagen</label>
+      <input type="text" class="form-control" id="imgEdu" name="imgEdu" placeholder="URL_Imagen" [(ngModel)]="educacion.imgEdu" required>
     </div>
+    <div class="col-md-12">
+      <label for="titleEdu" class="form-label">Titulo </label>
+      <input type="text" class="form-control" id="titleEdu" name="titleEdu" placeholder="Titulo" [(ngModel)]="educacion.titleEdu" required>
+    </div>
+    <div class="col-md-12">
+      <label for="durationEdu" class="form-label">Duracion en años </label>
+      <input type="text" class="form-control" id="durationEdu" name="durationEdu" placeholder="Duracion" [(ngModel)]="educacion.durationEdu" required>
+    </div>
+    <div class="col-md-12">
+      <label for="descriptionEdu">Descripcion </label>
+      <input type="text" class="form-control" id="descriptionEdu" name="descriptionEdu" placeholder="Descripcion" [(ngModel)]="educacion.descriptionEdu" required>
+    </div>
+    <div class="col-md-12">
+      <button type="submit" style="margin-top:15px;" class="btn btn-dark">Actualizar</button>
+    </div>
+  </form>
   </div>
-  
+</div>

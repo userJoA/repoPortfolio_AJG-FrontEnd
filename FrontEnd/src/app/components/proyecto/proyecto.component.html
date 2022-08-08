@@ -1,35 +1,34 @@
 
 
 <div class="container" style="margin-bottom: 25px;">
-    <div class="container" id="HeaderPro">
-      <h4><span style="color:#3B5CE5;">Proyectos </span> </h4>
-      <button type="button" class="btn" routerLink="/newProyecto" *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
-    </div>
-    <div class="mb-3" id="cardProyecto" *ngFor="let p of proyectos">
-      <div class="row g-0" >
-        <div class="col-md-4" style="padding: 75px;" >
-          <img src="../../../assets/icono de trabajo.png" class="img-fluid rounded-start" alt="Imagen  ">
+  <div class="container" id="HeaderPro">
+    <h4><span style="color:#3B5CE5;">Proyectos </span> </h4>
+    <button type="button" class="btn" routerLink="/newProyecto" *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
+  </div>
+  <div class="mb-3" *ngFor="let p of proyectos" style="margin-top :25px;">
+    <div class="row g-0" >
+      <div class="col-md-4" >
+        <img src="../../../assets/icono de trabajo.png" class="img-fluid rounded-start" alt="Imagen  ">
+      </div>
+      <div class="col-md-8" >
+        <div *ngIf="isLogged">
+          <ul id="navPro">
+            <li *ngIf="isLogged">
+              <button class="btn" routerLink="/editProyecto/{{p.id}}">
+                <i class="bi bi-pen"></i></button>
+            </li>
+            <li *ngIf="isLogged">
+              <button class="btn" (click)="delete(p.id)">
+                <i class="bi bi-x-circle"></i></button>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-8" >
-          <div class="card-text" style="height: 50px;" *ngIf="isLogged">
-            <ul id="navPro">
-              <li *ngIf="isLogged">
-                <button class="btn" routerLink="/editProyecto/{{p.id}}">
-                  <i class="bi bi-pen"></i></button>
-              </li>
-              <li *ngIf="isLogged">
-                <button class="btn" (click)="delete(p.id)">
-                  <i class="bi bi-x-circle"></i></button>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">{{p.namePro}}</h5>
-            <p class="card-text">{{p.descriptionPro}}</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title">{{p.namePro}}</h5>
+          <p class="card-text">{{p.descriptionPro}}</p>
+        </div>
 
-        </div>
       </div>
     </div>
+  </div>
 </div>

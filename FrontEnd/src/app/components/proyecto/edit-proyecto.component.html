@@ -1,21 +1,26 @@
-<div class="container m-5 p-5">
-  <div class="card">
-    <form (ngSubmit)="onEdit()" novalidate #f="ngForm" >
-        <div class="form-group">
-          <label for="imgPro">IMgHab </label>
-          <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="proyecto.imgPro" required>
-        </div>
+<div class="container-fluid">
+  <div class="row " style="margin-bottom: 25px;">
 
-        <div class="form-group">
-          <label for="namePro">Nombre </label>
-          <input type="text" class="form-control" id="namePro" name="namePro" [(ngModel)]="proyecto.namePro" required>
-        </div>
-
-        <div class="form-group">
-          <label for="descriptionPro">Descripcion</label>
-          <input type="text" class="form-control" id="descriptionPro" name="descriptionPro" [(ngModel)]="proyecto.descriptionPro" required>
-        </div>
-        <button class="btn btn-primary">Agregar</button>
-    </form>
+    <form class="row g-3" (ngSubmit)="onEdit()" novalidate #f="ngForm">
+      <div class="col-md-12" style="display: flex; justify-content:space-between;">
+        <h5><span>Editar</span> </h5>
+        <button type="button" class="btn-close btn-close-dark" aria-label="Close"></button>
+      </div>
+    <div class="col-md-12">
+      <label for="imgEdu" class="form-label">URL_imagen</label>
+      <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="proyecto.imgPro" required>
+    </div>
+    <div class="col-md-12">
+      <label for="titleEdu" class="form-label">Nombre </label>
+      <input type="text" class="form-control" id="namePro" name="namePro" [(ngModel)]="proyecto.namePro" required>
+    </div>
+    <div class="col-md-12">
+      <label for="durationEdu" class="form-label">Descripcion </label>
+      <input type="text" class="form-control" id="descriptionPro" name="descriptionPro" [(ngModel)]="proyecto.descriptionPro" required>
+    </div>
+    <div class="col-md-12">
+      <button type="submit" style="margin-top:15px;" class="btn btn-dark">Actualizar</button>
+    </div>
+  </form>
   </div>
 </div>

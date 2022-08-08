@@ -5,8 +5,8 @@ h2,h3{
 }
 
 #cardProyecto{
-margin: auto;
-margin-left: 150px;
+
+
 width: 1000px;
 width: 750px;
 align-items: center;
@@ -39,9 +39,9 @@ height: 7vh;
 
 }
 
-
-div{
-background-color: #DEDFEA;
+img{
+  width: 200px;
+  height: 300px;
 }
 
 
